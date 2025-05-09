@@ -23,7 +23,7 @@ export class SaveFile implements SaveFileUseCase {
       fs.writeFileSync(`${fileDestination}/${fileName}.txt`, fileContent)
       return true
     } catch (error) {
-      console.error('Error creating file', error)
+      //   console.error('Error creating file', error)
       return false
     }
   }
